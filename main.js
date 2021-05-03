@@ -7,7 +7,7 @@ cadastrar.addEventListener('click', function exibirCaixaCadastro(){
     const itemASerCriado = document.createElement('div');
     //Agora informamos a classe dele
     itemASerCriado.classList.add('cadastrarCliente');
-  
+    
     itemASerCriado.innerHTML = 
       `
         <h4>Novo cliente</h4>
@@ -21,6 +21,7 @@ cadastrar.addEventListener('click', function exibirCaixaCadastro(){
         <input type="button" value="Salvar"> 
         <input type="button" value="Cancelar">
       `
+      //Informamos qual é o elemento pai
       document.getElementById('sessaoCadastro').appendChild(itemASerCriado);
 });
 
